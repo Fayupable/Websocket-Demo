@@ -1,0 +1,24 @@
+services:
+  mysql:
+    container_name: ms_mysql
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: fayupable
+      MYSQL_DATABASE: fayupable_db
+      MYSQL_USER: fayupable
+      MYSQL_PASSWORD: fayupable
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    networks:
+      - microservices-net
+    restart: unless-stopped
+
+networks:
+  microservices-net:
+    driver: bridge
+
+volumes:
+
+  mysql:
