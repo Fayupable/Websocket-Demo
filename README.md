@@ -54,7 +54,7 @@ This will start a PostgreSQL container with the necessary configuration.
 ### Running the Application
 1. Clone the repository:
    ```sh
-   git clone [https://github.com/Fayupable/websocketdemo.git](https://github.com/Fayupable/Websocket-Demo)
+   git clone https://github.com/Fayupable/Websocket-Demo
    cd websocketdemo
    ```
 
